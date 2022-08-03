@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Gilroy), url("Gilroy-Regular.433d4bd6.woff2") format("woff2"), url("Gilroy-Regular.5ec48757.woff") format("woff");
+}
+
+@font-face {
+  font-family: Gilroy Semibold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Gilroy Semibold), url("Gilroy-Semibold.fe84a725.woff2") format("woff2"), url("Gilroy-Semibold.664757c2.woff") format("woff");
+}
+
+html, body {
+  height: 100%;
+  color: #1f3f68;
+  font-family: Gilroy, serif;
+  font-size: 1rem;
+}
+
+.wrapper {
+  min-height: 100%;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+}
+
+.main {
+  flex: auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header .header-container {
+  max-width: 1200px;
+  background-color: #ff0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 48px 15px;
+  display: flex;
+}
+
+.header .header-container .logo {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.header .header-container .logo .logo__circle-blue {
+  width: 32px;
+  height: 32px;
+  z-index: 0;
+  background-color: #316099;
+  border: 2px solid #316099;
+  border-radius: 50%;
+}
+
+.header .header-container .logo .logo__circle-white {
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+  background-color: #fff;
+  border: 2px solid #316099;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.header .header-container .logo .logo__letter {
+  color: #316099;
+  z-index: 2;
+  font-family: Gilroy Semibold;
+  font-size: 1.6rem;
+  line-height: 20px;
+  position: absolute;
+  transform: translateX(24px)translateY(-1px);
+}
+
+.header .header-container .header_menu {
+  display: none;
+}
+
+.header .header-container .icon-menu {
+  height: 16px;
+  width: 24px;
+  flex-direction: column;
+  flex: 0 0 24px;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.header .header-container .icon-menu span {
+  height: 2px;
+  background-color: #316099;
+  border: 0;
+}
+
+.header .header-container .icon-menu:before, .header .header-container .icon-menu:after {
+  content: "";
+  height: 2px;
+  background-color: #316099;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
